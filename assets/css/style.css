@@ -251,7 +251,7 @@ button {
         rgba(213, 96, 96, 1) 50%,
         rgba(198, 60, 109, 1) 100%
     );
-    height: 42rem;
+    height: 40rem;
     position: relative;
     overflow: hidden;
 }
@@ -312,13 +312,121 @@ button {
 }
 
 .hero__balloon-1 {
-    bottom: -7rem;
+    bottom: -6rem;
     left: -4.5rem;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
 }
 
 .hero__balloon-2 {
-    bottom: -7rem;
+    bottom: -6rem;
     right: -4rem;
-    transform: rotate(-10deg);
+    transform: rotateY(180deg) rotate(15deg);
+}
+
+/*=============== Cardlist 1 Button ===============*/
+.cardlist__button {
+    color: var(--black);
+    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
+    transition: color 0.4s;
+}
+
+.cardlist__button i {
+    font-size: 2.5rem;
+    transition: transform 0.3s;
+    color: #000;
+    display: grid;
+    place-items: center;
+}
+
+.cardlist__button:hover {
+    color: var(--davia-red);
+}
+
+.cardlist__button:hover i {
+    transform: translateY(0.5rem);
+    color: var(--davia-red);
+}
+
+/*=============== Cardlist 2 Button ===============*/
+.cardlist2__button {
+    display: flex;
+    color: var(--black);
+    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
+    transition: color 0.4s;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cardlist2__button i {
+    font-size: 1.8rem;
+    transition: transform 0.3s;
+    color: #000;
+}
+
+.cardlist2__button:hover {
+    color: var(--davia-red);
+}
+
+.cardlist2__button:hover i {
+    transform: translateX(0.35rem);
+    color: var(--davia-red);
+}
+
+/*=============== Card List ===============*/
+.cardlist__container {
+    margin-top: -2.2rem;
+    margin-bottom: 4rem;
+    place-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cardslist__show {
+    margin-bottom: 2rem;
+}
+
+.cardslist__show img {
+    width: 180px;
+}
+
+.cardlist2__container {
+    margin-top: -2.5rem;
+    margin-bottom: 5rem;
+    place-items: center;
+    position: relative;
+}
+
+.cardlist2__container h1 {
+    text-align: center;
+}
+
+/*=============== Experience ===============*/
+.experience {
+    background: rgb(213, 96, 96);
+    background: linear-gradient(
+        0deg,
+        rgba(213, 96, 96, 1) 50%,
+        rgba(198, 60, 109, 1) 100%
+    );
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.experience__container h2 {
+    color: var(--white);
+}
+
+.card__container {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.card__container img {
+    max-width: 180%;
+    height: auto;
+    margin-top: 2rem;
 }

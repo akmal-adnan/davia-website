@@ -38,3 +38,18 @@ const scrollHeader = () => {
         : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+/*=============== SWIPER POPULAR ===============*/
+var swiperButton = new Swiper('.swiper', {
+    freeMode: true,
+    spaceBetween: 10,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+})
